@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="light.css">
+    <title>Web Calculator</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <button onclick="switchTheme()">Dark Mode</button>
+            <h1>Web Calculator</h1>
+        </div>
+
+        <div>
+            <input type="text" placeholder="Result" id="result"  readonly/>
+            <input type="button" onclick="clearScreen()" value="C" />
+        </div>
+
+        <div>
+            <input type="button" onclick="liveScreen(1)" value="1" id="one"/>
+            <input type="button" onclick="liveScreen(2)" value="2" id="two"/>
+            <input type="button" onclick="liveScreen(3)" value="3" id="thee"/>
+            <input type="button" onclick="liveScreen('+')" value="+" />
+        </div>
+
+        <div>
+            <input type="button" onclick="liveScreen(4)" value="4" id="one"/>
+            <input type="button" onclick="liveScreen(5)" value="5" id="two"/>
+            <input type="button" onclick="liveScreen(6)" value="6" id="thee"/>
+            <input type="button" onclick="liveScreen('-')" value="-" />
+        </div>
+
+        <div>
+            <input type="button" onclick="liveScreen(1)" value="7" id="one"/>
+            <input type="button" onclick="liveScreen(1)" value="8" id="two"/>
+            <input type="button" onclick="liveScreen(1)" value="9" id="thee"/>
+            <input type="button" onclick="liveScreen(1)" value="*" />
+        </div>
+
+        <div>
+            <input type="button" onclick="liveScreen(1)" value="/" id="one"/>
+            <input type="button" onclick="liveScreen(1)" value="0" id="two"/>
+            <input type="button" onclick="liveScreen(1)" value="." id="thee"/>
+            <input type="button" onclick="result.value = eval(result.value)" value="=" />
+        </div>
+    </center> 
+    <script src="index.js"></script>
+</body>
+</html>
